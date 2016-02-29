@@ -309,4 +309,9 @@ interface INetworkManagementService
     int removeRoutesFromLocalNetwork(in List<RouteInfo> routes);
 
     boolean isNetworkRestricted(int uid);
+
+    /**
+     * Restrict UID from accessing a network interface
+     */
+    void restrictAppOnInterface(String key, int uid, boolean restrict);
 }
