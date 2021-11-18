@@ -5247,7 +5247,7 @@ public class SettingsProvider extends ContentProvider {
                                 Global.RESTRICTED_NETWORKING_MODE,
                                 "1",
                                 null /* tag */,
-                                true /* makeDefault */,
+                                false /* makeDefault */,
                                 SettingsState.SYSTEM_PACKAGE_NAME);
                     }
                     final String UIDS_ALLOWED_ON_RESTRICTED_NETWORKS =
@@ -5271,7 +5271,7 @@ public class SettingsProvider extends ContentProvider {
                                     UIDS_ALLOWED_ON_RESTRICTED_NETWORKS,
                                     TextUtils.join(";", uids),
                                     null /* tag */,
-                                    true /* makeDefault */,
+                                    false /* makeDefault */,
                                     SettingsState.SYSTEM_PACKAGE_NAME);
                         } catch (RemoteException e) {
                             Slog.e(LOG_TAG, "Failed to get set uids allowed on restricted networks");
